@@ -1,0 +1,120 @@
+package arrayPractice;
+
+import utilities1.ArrayUtility;
+import utilities1.StringUtility;
+
+import java.util.Arrays;
+
+public class methodPractice {
+    public static void main(String[] args) {
+        int arr [] = {1,2,3,4};
+        int num = 5;
+        arr = ArrayUtility.addElement(arr, num);
+        System.out.println(Arrays.toString(arr));
+        arr = ArrayUtility.addElement(arr,6);
+        System.out.println(Arrays.toString(arr));
+        System.out.println("================================================");
+        double arr1 [] = {1.9,2.1,3.3,4.6};
+        double num1 = 5.5;
+        arr1 = ArrayUtility.addElement(arr1,num1);
+        System.out.println(Arrays.toString(arr1));
+        System.out.println("=================================");
+        String[]str = {"Asad", "Nasrat","Ateeq", "Muzafar","Jawad"};
+        String word = "Hashmat";
+        str = ArrayUtility.addElement(str,word);
+        System.out.println(Arrays.toString(str));
+        System.out.println("=================================");
+        char[]ch = {'A', 'N','T', 'M','J'};
+        char litter = 'H';
+        ch = ArrayUtility.addElement(ch,litter);
+        System.out.println(Arrays.toString(ch));
+        System.out.println("=================================");
+        int arr2 [] = {1,2,3,4,5};
+        System.out.println(ArrayUtility.max(arr2));
+        System.out.println("================================================");
+        double arr3 [] = {1.9,2.1,3.3,4.6};
+        System.out.println(ArrayUtility.max(arr3));
+        System.out.println("=================================");
+        int arr4 [] = {1,2,3,4,5};
+        System.out.println(ArrayUtility.min(arr4));
+        System.out.println("================================================");
+        double arr5 [] = {1.9,2.1,3.3,4.6};
+        System.out.println(ArrayUtility.min(arr5));
+        System.out.println("=================================");
+        int arr6 [] = {1,2,3,4,5};
+        int arr7 [] = {1,2,3,4,5,6};
+        int[] merge = ArrayUtility.merge(arr6,arr7);
+        System.out.println(Arrays.toString(merge));
+        System.out.println("================================================");
+
+        double arr8 [] = {1.9,2.1,3.3,4.6};
+        double arr9 [] = {1.9,2.1,3.3};
+        double[] merge1 = ArrayUtility.merge(arr8,arr9);
+        System.out.println(Arrays.toString(merge1));
+        System.out.println("=================================");
+        String[]str1 = {"Asad", "Nasrat","Ateeq", "Muzafar","Jawad"};
+        String [] word1 = {"Hedayat", "Hamasa","Wahid", "Ali","Hasinat"};
+        String merge2[] = ArrayUtility.merge(str1,word1);
+        System.out.println(Arrays.toString(merge2));
+        System.out.println("=================================");
+        char[]ch1 = {'A', 'N','T', 'M','J'};
+        char[]ch2 = {'a', 'n','t', 'm','k', 'w'};
+        char[] ch3 = ArrayUtility.merge(ch1,ch2);
+        System.out.println(Arrays.toString(ch3));
+        System.out.println("=================================");
+        int arr10 [] = {1,2,3,4,5};
+        arr10 = ArrayUtility.remove(arr10,2);
+        System.out.println(Arrays.toString(arr10));
+        System.out.println("================================================");
+        double arr11 [] = {1.9,2.1,3.3,4.6};
+
+        arr11 = ArrayUtility.remove(arr11, 1);
+
+        System.out.println(Arrays.toString(arr11));
+        System.out.println("=================================");
+        String [] str3 = {"Hedayat", "Hamasa","Wahid", "Ali","Hasinat"};
+        str3 = ArrayUtility.remove(str3,3);
+        System.out.println(Arrays.toString(str3));
+        System.out.println("=================================");
+        char[]ch4 = {'a', 'n','t', 'm','k', 'w'};
+        ch4 = ArrayUtility.remove(ch4,4);
+        System.out.println(Arrays.toString(ch4));
+        System.out.println("=================================");
+        int arr12 [] = {1,2,3,4,5};
+        arr12 = ArrayUtility.revers(arr12);
+        System.out.println(Arrays.toString(arr12));
+        System.out.println("================================================");
+        double arr13 [] = {1.9,2.1,3.3,4.6};
+        arr13 = ArrayUtility.revers(arr13);
+        System.out.println(Arrays.toString(arr13));
+        System.out.println("=================================");
+        char[]ch5 = {'a', 'n','t', 'm','k', 'w'};
+        ch5 = ArrayUtility.revers(ch5);
+        System.out.println(Arrays.toString(ch5));
+        System.out.println("=================================");
+        String [] str4 = {"Hedayat", "Hamasa","Wahid", "Ali","Hasinat"};
+        str4 = ArrayUtility.revers(str4);
+        System.out.println(Arrays.toString(str4));
+        System.out.println("================================================");
+        int arr14 [] = {1,9,2,1,3,3,4,6};
+        int word5 = 5;
+        boolean contains = ArrayUtility.contains(arr14,word5);
+        System.out.println(contains);
+        System.out.println("================================================");
+        double arr15 [] = {1,9.2,2,1,3,3.4,4,6.7};
+        double word6 = 3.5;
+        boolean contains1 = ArrayUtility.contains(arr15,word6);
+        System.out.println(contains1);
+        System.out.println("=================================");
+        String[]str5 = {"Asad", "Nasrat","Ateeq", "Muzafar","Jawad"};
+        String word7 = "Hashmat";
+        boolean contains2 = ArrayUtility.contains(str5,word7);
+        System.out.println(contains2);
+        System.out.println("=================================");
+        char[]ch6 = {'a', 'n','t', 'm','k', 'w'};
+        char lttr2 = 'z';
+        boolean contains3 = ArrayUtility.contains(ch6,lttr2);
+        System.out.println(contains3);
+
+    }
+}
