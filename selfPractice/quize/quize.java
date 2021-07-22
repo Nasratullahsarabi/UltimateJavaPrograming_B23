@@ -5,16 +5,15 @@ import java.util.Arrays;
 public class quize {
     public static void main(String[] args) {
 
-        int[]num1 = new int[0];
-        int[]num2 = {1,2,3,4,5};
-        num1 = num2;
-
-        for (int i = 0; i < num1.length; i++) {
-
-            System.out.println(num1[i]);
-
+        int num = 5;
+        while (isAvaialable(num)){
+            System.out.println(num);
+            --num;
         }
 
 
+    }
+    public static boolean isAvaialable(int num){
+        return (num-- > 0)?true:false;
     }
 }
