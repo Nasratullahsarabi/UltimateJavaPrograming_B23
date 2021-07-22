@@ -2,9 +2,11 @@ package day08_MethodOverLoading;
 
 public class SecondPractice {
     public static void main(String[] args) {
+        //System.out.println(fibonacci(8));
 
 
     }
+    /*
     public static void fibo(int number){
         int p2 = 0;
         int p1 = 1;
@@ -17,7 +19,19 @@ public class SecondPractice {
             p1=result;
 
         }
+
+     */
+
+
+    public static void fibonacci (int number){
+        int num0 = 0;
+        int num1 = 1;
+        int result = 0;
+        for (int i = 0; i < number; i++) {
+            System.out.println(i+(i+1));
+        }
     }
+
 }
 /*
 Create a method that will give you the Fibonacci numbers up to the x value. Where x is the given parameter.
