@@ -1,19 +1,12 @@
 package quize;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class quize {
     public static void main(String[] args) {
-
-        int num = 5;
-        while (isAvaialable(num)){
-            System.out.println(num);
-            --num;
-        }
+        Scanner scan = new Scanner(System.in);
 
 
-    }
-    public static boolean isAvaialable(int num){
-        return (num-- > 0)?true:false;
     }
 }

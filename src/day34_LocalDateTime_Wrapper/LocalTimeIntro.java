@@ -4,15 +4,13 @@ import java.time.LocalTime;
 
 public class LocalTimeIntro {
     public static void main(String[] args) {
-        LocalTime now = LocalTime.now();
-
-        System.out.println(now);
-
-        LocalTime breakTime = now.plusMinutes(15);
+        LocalTime breakTime = LocalTime.now();
+        LocalTime nextSesion = breakTime.plusMinutes(10);
 
         System.out.println(breakTime);
-
-        LocalTime quizeDue = breakTime.plusMinutes(20);
-        System.out.println(quizeDue);
+        System.out.println(nextSesion);
+        System.out.println("===========================");
+        LocalTime comeBack = LocalTime.of(5,55);
+        System.out.println(comeBack);
     }
 }

@@ -5,33 +5,27 @@ import java.util.Arrays;
 public class timeConversionPractice {
     public static void main(String[] args) {
 
-        String s = "12:00:00AM"; //  00:00:00
-        String m = "00:00:00";
-        int hour = 12,
-                minute = 00,
-                second = 00,
-                mHour = 00;
-
-        String[]str = s.split(":");
-        String hourAM = str[0];
-        String minuteAM = str[1];
-        String secondAM = str[2];
-
-
-        if (s.contains("AM") && str[0].equals("12")){
-            m = "00:00:00";
+        String s = "2:59:59PM";
+        String military = "";
+        if (s.contains("AM") && s.equals("12:00:00AM")){
+            military = "00:00:00";
         }else {
-            m = s.substring(0,s.length()-2);
+            military = s.substring(0,s.length()-2);
+        }
+        String[] pm = s.split(":");
+        int firstIndex = Integer.parseInt(pm[0]);
+
+
+        if (s.contains("PM") && firstIndex == 12){
+            military = (firstIndex)+s.substring(2,s.length()-2);
+
+        }else if (s.contains("PM") && firstIndex < 12){
+            military = (firstIndex+12)+":"+pm[1]+":"+pm[2];
+            military = military.substring(0,military.length()-2);
         }
 
-        if (s.contains("PM") && str[0].equals("12")){
-            m = "12:00:00";
-        }
-        if (s.contains("PM")){
+        System.out.println(military);
 
-        }
-
-        System.out.println(m);
 
 
     }
