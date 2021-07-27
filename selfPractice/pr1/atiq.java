@@ -1,32 +1,26 @@
 package pr1;
 
+import java.util.Scanner;
+
 public class atiq {
     public static void main(String[] args) {
-        String company = "Starbucks";
-        byte workHistory = 5;
-        int sales = 100_000;
-        int capital = 100_000;
-        String pHistory = "Good";
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Welcome to cybertek apartment\nNumber of bedroom you are interes: ");
+        int n = scan.nextInt();
+        int bedroom1 = 1100,
+                bedroom2 = 1850,
+                bedroom3 = 2550;
 
+        if(n == 1){
+            System.out.println("one bedroom selected\nStarting price"+ bedroom1);
+        }else if (n == 2){
+            System.out.println("two bedroom selected\nStarting price"+ bedroom2);
+        }else if (n==3){
+            System.out.println("three bedroom selected\nStarting price"+ bedroom3);
+        }else {
+            System.out.println("Invalid number");
+        }
 
-        boolean eligibilityForFirstPeriod = (pHistory == "Good" || pHistory == "fair" ) && workHistory >= 2 && sales >= 50_000 && capital >= 50_000;
-        boolean eligibilityForSecondPeriod = workHistory >= 3 && sales >= 60_000 && capital >= 60_000 && (pHistory == "Good" || pHistory == "Fair");
-        boolean eligibilityForThirdPeriod = workHistory >= 5 && sales >= 100_000 && capital >= 100_000 && pHistory == "Good";
-
-
-        System.out.println("eligibility For First Period = " + eligibilityForFirstPeriod);
-        System.out.println("eligibility For Second Period = " + eligibilityForSecondPeriod);
-        System.out.println("eligibilityFor  Third period = " + eligibilityForThirdPeriod);
-        System.out.println();
-
-        System.out.println("__________________________________________________________________");
-
-        if (eligibilityForThirdPeriod = workHistory >= 5 && sales >= 100_000 && capital >= 100_000 && pHistory == "Good") {
-
-            System.out.println(company + " You are qualified for 3rd period");
-
-        }else if (eligibilityForSecondPeriod = workHistory >= 3 && sales >= 60_000 && capital >= 60_000 && (pHistory == "Good" || pHistory == "Fair")){
-}
     }
 }
 
